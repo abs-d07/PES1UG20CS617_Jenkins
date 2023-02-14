@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn clean install'
-                sh 'g++ -o output_file input_file.cpp'
+                sh 'g++ -o output_file new_working.cpp'
                 echo 'Build Stage Successful'
             }
         }
